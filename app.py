@@ -70,6 +70,28 @@ st.markdown(
     box-shadow: 0 4px 14px rgba(139, 92, 246, 0.25);
 }
 
+/* Fix text visibility while typing questions */
+.stTextInput input,
+.stTextArea textarea,
+[data-testid="stChatInput"] textarea,
+[data-testid="stChatInput"] input {
+    color: #172033 !important;
+    -webkit-text-fill-color: #172033 !important;
+    background-color: #FFFFFF !important;
+    caret-color: #635BDB !important;
+}
+
+/* Make placeholder text visible */
+.stTextInput input::placeholder,
+.stTextArea textarea::placeholder,
+[data-testid="stChatInput"] textarea::placeholder,
+[data-testid="stChatInput"] input::placeholder {
+    color: #737B8C !important;
+    -webkit-text-fill-color: #737B8C !important;
+    opacity: 1 !important;
+}
+
+
 /* Hover effect */
 [data-testid="stFileUploader"] button:hover {
     background: linear-gradient(135deg, #0891B2, #22D3EE) !important;
